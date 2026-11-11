@@ -53,13 +53,9 @@ nav:
 
   - Продукт:
       - Обзор: 01-product/overview.md
-      - Требования: 01-product/requirements.md
-      - Сценарии: 01-product/user-scenarios.md
-
 
   - База данных:
       - Модель данных: 04-database/data-model.md
-      - Сущности: 04-database/entities.md
 
   - База знаний:
       - Поставщики:
