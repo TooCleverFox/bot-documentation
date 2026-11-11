@@ -56,15 +56,6 @@ nav:
       - Требования: 01-product/requirements.md
       - Сценарии: 01-product/user-scenarios.md
 
-  - Архитектура:
-      - Обзор: 02-architecture/overview.md
-      - Компоненты: 02-architecture/components.md
-      - Sequence diagrams: 02-architecture/sequence-diagrams.md
-
-  - API:
-      - Обзор: 03-api/overview.md
-      - Методы: 03-api/endpoints.md
-      - Ошибки: 03-api/errors.md
 
   - База данных:
       - Модель данных: 04-database/data-model.md
