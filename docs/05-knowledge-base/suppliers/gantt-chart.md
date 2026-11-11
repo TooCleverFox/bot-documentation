@@ -1,0 +1,1 @@
+{{ read_excel('05-knowledge-base/suppliers/Диаграмма Ганта.xlsx', sheet_name='Диаграмма Ганта', engine='openpyxl') }}

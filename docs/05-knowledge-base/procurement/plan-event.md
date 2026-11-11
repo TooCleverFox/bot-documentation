@@ -1,0 +1,1 @@
+{{ read_excel('05-knowledge-base/procurement/План event-маркетинга.xlsx', sheet_name='План event-маркетинга', engine='openpyxl') }}

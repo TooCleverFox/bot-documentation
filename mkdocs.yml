@@ -1,0 +1,77 @@
+
+site_name: Discount Bot Documentation
+site_description: Technical documentation of Discount Bot
+
+theme:
+  name: material
+  language: ru
+
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Темная тема
+
+    - scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+  - javascripts/table-filter.js
+  - javascripts/table-scroll.js
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+  - table-reader
+
+nav:
+  - Главная: index.md
+
+  - Продукт:
+      - Обзор: 01-product/overview.md
+      - Требования: 01-product/requirements.md
+      - Сценарии: 01-product/user-scenarios.md
+
+  - Архитектура:
+      - Обзор: 02-architecture/overview.md
+      - Компоненты: 02-architecture/components.md
+      - Sequence diagrams: 02-architecture/sequence-diagrams.md
+
+  - API:
+      - Обзор: 03-api/overview.md
+      - Методы: 03-api/endpoints.md
+      - Ошибки: 03-api/errors.md
+
+  - База данных:
+      - Модель данных: 04-database/data-model.md
+      - Сущности: 04-database/entities.md
+
+  - База знаний:
+      - Поставщики:
+          - Диаграмма Ганта: 05-knowledge-base/suppliers/gantt-chart.md
+      - Закупки:
+          - План event-маркетинга: 05-knowledge-base/procurement/plan-event.md
