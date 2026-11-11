@@ -1,0 +1,108 @@
+/* Расширяем основную область сайта */
+.md-main__inner.md-grid {
+    max-width: initial;
+}
+
+/* Таблицы */
+.md-typeset__table {
+    display: block;
+    width: 100%;
+}
+
+.md-typeset__table table {
+    width: 100%;
+    display: table;
+}
+
+/* Не даём длинным значениям ломать таблицу */
+.md-typeset table th,
+.md-typeset table td {
+    white-space: nowrap;
+}
+
+/* Немного увеличиваем пространство вокруг таблиц */
+.md-typeset__table {
+    margin: 1.5em 0;
+}
+
+
+/* Панель фильтрации */
+.table-filter {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 16px 0 8px;
+    flex-wrap: wrap;
+}
+
+/* Поле поиска */
+.table-filter input {
+    flex: 1;
+    min-width: 220px;
+    max-width: 420px;
+    padding: 10px 14px;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 8px;
+    background: var(--md-default-bg-color);
+    color: var(--md-default-fg-color);
+    font: inherit;
+}
+
+/* Счётчик */
+.table-filter-counter {
+    color: var(--md-default-fg-color--light);
+    font-size: 0.75rem;
+}
+
+/* Кнопка очистки */
+.table-filter button {
+    padding: 8px 14px;
+    border: 1px solid var(--md-primary-fg-color);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--md-primary-fg-color);
+    cursor: pointer;
+    font: inherit;
+}
+
+.table-filter button:hover {
+    background: var(--md-primary-fg-color);
+    color: white;
+}
+.floating-table-scroll {
+    position: fixed;
+    bottom: 0;
+    height: 18px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    z-index: 9999;
+    background: var(--md-default-bg-color);
+    border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.floating-table-scroll-inner {
+    height: 1px;
+}
+.floating-table-header {
+    position: fixed;
+    z-index: 1000;
+    overflow: hidden;
+    pointer-events: none;
+    background: var(--md-default-bg-color);
+}
+
+.floating-table-header table {
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0;
+}
+
+.floating-table-header th {
+    height: 44px;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    font-size: 14px;
+
+
+}
